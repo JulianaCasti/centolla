@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - El Centollo</title>
+
+    <style>
+        /* RESET GENERAL */
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#ffffff;
+            color:#333;
+        }
+
+        /* ENCABEZADO */
+        .encabezado{
+            width:100%;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+        }
+
+        .logo{
+            width:100%;
+            display:flex;
+            justify-content:center;
+            padding:40px 0;
+            background:#fff;
+        }
+
+        .logo img{
+            width:500px;
+            max-width:95vw;
+            height:auto;
+        }
+
+        .barra-navegacion{
+            width:100%;
+            background:#111518;
+            padding:30px 0;
+        }
+
+        .menu{
+            display:flex;
+            justify-content:center;
+            list-style:none;
+            gap:80px;
+        }
+
+        .menu a{
+            text-decoration:none;
+            color:white;
+            font-weight:bold;
+            font-size:1.4rem;
+            transition:.3s;
+        }
+
+        .menu a:hover{
+            color:#f0eae1;
+        }
+
+        /* CABECERA */
+        .banner-reservas{
+            background:#fffcf5;
+            width:100%;
+            padding:50px 20px;
+            text-align:center;
+            border-bottom:1px solid #f0eae1;
+        }
+
+        .linea-decorativa{
+            width:80px;
+            height:2px;
+            background:#9e6b43;
+            margin:0 auto 15px;
+        }
+
+        .banner-reservas h1{
+            color:#111518;
+            font-family:Georgia, serif;
+            font-size:2.2rem;
+            margin-bottom:25px;
+        }
+
+        .banner-reservas p{
+            color:#555;
+            font-size:1.1rem;
+            max-width:850px;
+            margin:0 auto 10px;
+            line-height:1.6;
+        }
+
+        .nota-legal{
+            font-size:.9rem !important;
+            color:#888 !important;
+            font-style:italic;
+        }
+
+        /* QR */
+        .qr{
+            text-align:center;
+            padding:50px 20px;
+        }
+
+        .qr img{
+            width:350px;
+            max-width:90%;
+            border-radius:10px;
+            box-shadow:0 5px 15px rgba(0,0,0,.2);
+        }
+
+        /* FOOTER */
+        .footer-simple{
+            background:#111518;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+        }
+
+        .footer-simple p{
+            margin:5px 0;
+        }
+
+        /* RESPONSIVO */
+        @media(max-width:768px){
+
+            .logo{
+                padding:20px 0;
+            }
+
+            .logo img{
+                width:280px;
+            }
+
+            .barra-navegacion{
+                padding:15px 0;
+            }
+
+            .menu{
+                flex-direction:column;
+                gap:15px;
+                align-items:center;
+            }
+
+            .menu a{
+                font-size:1.2rem;
+            }
+
+            .banner-reservas h1{
+                font-size:1.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+
+        <div class="logo">
+            <img src="img/logo.png" alt="El Centollo">
+        </div>
+
+        <nav class="barra-navegacion">
+            <ul class="menu">
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="integrantes.html">Integrantes</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- CONTENIDO -->
+    <section class="banner-reservas">
+        <div class="linea-decorativa"></div>
+
+        <h1>Formulario de Reserva - El Centollo</h1>
+
+        <p>
+            Cuando envíes este formulario, recibirás un correo electrónico
+            con los datos para realizar el pago de garantía de mesa.
+            Tu reserva quedará confirmada una vez que el pago sea acreditado.
+        </p>
+
+        <p class="nota-legal">
+            Información requerida por la Ley de Protección de Datos Vigente.
+        </p>
+    </section>
+
+    <!-- QR -->
+    <div class="qr">
+        <img src="img/QR.png" alt="Código QR para reservas">
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer-simple">
+        <p><strong>El Centollo</strong></p>
+        <p>📞 34444444</p>
+        <p>© 2026 - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
